@@ -8,3 +8,13 @@ C:\Users\innocenti\source\repos\MultiThread\MultiThread\bin\Debug\MultiThread.pd
 C:\Users\innocenti\source\repos\MultiThread\MultiThread\obj\Debug\MultiThread.exe
 C:\Users\innocenti\source\repos\MultiThread\MultiThread\obj\Debug\MultiThread.pdb
 C:\Users\innocenti\source\repos\MultiThread\MultiThread\obj\Debug\MultiThread.Form1.resources
+C:\Users\Inox\Documents\src\Multithreadcsharp\MultiThread\MultiThread\obj\Debug\MultiThread.csprojAssemblyReference.cache
+C:\Users\Inox\Documents\src\Multithreadcsharp\MultiThread\MultiThread\obj\Debug\MultiThread.Form1.resources
+C:\Users\Inox\Documents\src\Multithreadcsharp\MultiThread\MultiThread\obj\Debug\MultiThread.Properties.Resources.resources
+C:\Users\Inox\Documents\src\Multithreadcsharp\MultiThread\MultiThread\obj\Debug\MultiThread.csproj.GenerateResource.cache
+C:\Users\Inox\Documents\src\Multithreadcsharp\MultiThread\MultiThread\obj\Debug\MultiThread.csproj.CoreCompileInputs.cache
+C:\Users\Inox\Documents\src\Multithreadcsharp\MultiThread\MultiThread\obj\Debug\MultiThread.exe
+C:\Users\Inox\Documents\src\Multithreadcsharp\MultiThread\MultiThread\obj\Debug\MultiThread.pdb
+C:\Users\Inox\Documents\src\Multithreadcsharp\MultiThread\MultiThread\bin\Debug\MultiThread.exe.config
+C:\Users\Inox\Documents\src\Multithreadcsharp\MultiThread\MultiThread\bin\Debug\MultiThread.exe
+C:\Users\Inox\Documents\src\Multithreadcsharp\MultiThread\MultiThread\bin\Debug\MultiThread.pdb

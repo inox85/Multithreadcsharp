@@ -15,50 +15,56 @@ namespace MultiThread
     {
         Tests.ThreadClass tClass1;
         Tests.ThreadClass tClass2;
+        Tests.ThreadClass serialManager;
         Thread thread1;
         Thread thread2;
+        Thread sThread;
 
-        public delegate void UpdateLog(string text);
-        public UpdateLog delegatoLog;
+        public delegate void ReceiveDelegate(string StringaRicevuta);
+        public ReceiveDelegate updateLog;
 
         public Form1()
         {
 
             InitializeComponent();
-            this.delegatoLog = new UpdateLog(addToLog);
+            
+            serialManager = new Tests.ThreadClass("", serialPort);
+            serialManager.log += new Tests.ThreadClass.updateLog(log);
 
-            tClass1 = new Tests.ThreadClass("thread_1");
-            tClass2 = new Tests.ThreadClass("thread_2");
-            tClass1.log += new Tests.ThreadClass.updateText(log);
-            tClass2.log += new Tests.ThreadClass.updateText(log);
+            this.updateLog = new ReceiveDelegate(writeOutput);
 
-            thread1 = new Thread(tClass1.DoWork);
-            thread2 = new Thread(tClass2.DoWork);
 
         }
 
-        private void log(string text)
+        private void log(string indata)
         {
-           //delegatoLog(text);
-            Invoke(delegatoLog, new object[] { text });
+            Invoke(updateLog, new object[] { indata });
+
         }
 
-        public void addToLog(string text)
+        public void writeOutput(string text)
         {
             textBox1.Text += text + "\r\n";
             this.Refresh();
         }
 
         private void button1_Click(object sender, EventArgs e)
-        { 
-            thread1.Start();
-            thread2.Start();
+        {
+            serialManager = new Tests.ThreadClass("b", serialPort);
+            sThread = new Thread(serialManager.serialWrite);
+            sThread.Start();
+            
         }
 
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
-            thread1.Abort();
-            thread2.Abort();
+            sThread.Abort();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            sThread = new Thread(() => serialManager.serialWrite("b"));
+            sThread.Start();
         }
     }
 }
