@@ -1,0 +1,229 @@
+********************************************************************************************
+OPERATORE: RTHRTH
+DATA/ORA: 16/04/2021 12:06:04
+********************************************************************************************
+======================TEST TASTIERA=======================
+
+SIMULAZIONE TASTIERA AVVIATA
+
+SU PREMUTO
+USCITA PREMUTO
+INVIO PREMUTO
+GIU PREMUTO
+
+LA TASTIERA E' STATA VERIFICATA CORRETTAMENTE CORRETTAMENTE
+
+
+=================== TEST SUPERATO =================== 
+
+_____________________________________________________
+
+======================TEST TENSIONI A BORDO SCHEDA=======================
+
+TEST TENSIONI DI ALIMENTAZIONEE TENSIONE PT500
+
+VDC_24V [TARGET: 24 ] -> [ MISURATO: 24,39 ] -> [DEV: 0,3899994], [MAX DEV: 2]  -> [RISULTATO: PASSATO ] 
+VDC_5V [TARGET: 5 ] -> [ MISURATO: 5,05 ] -> [DEV: 0,05000019], [MAX DEV: 0,5]  -> [RISULTATO: PASSATO ] 
+VDC_5V_BKP [TARGET: 4,5 ] -> [ MISURATO: 4,66 ] -> [DEV: 0,1599998], [MAX DEV: 1]  -> [RISULTATO: PASSATO ] 
+VDC_5V_EXP [TARGET: 5 ] -> [ MISURATO: 5,05 ] -> [DEV: 0,05000019], [MAX DEV: 0,5]  -> [RISULTATO: PASSATO ] 
+VDC_PT500 [TARGET: 24 ] -> [ MISURATO: 24,33 ] -> [DEV: 0,3299999], [MAX DEV: 2]  -> [RISULTATO: PASSATO ] 
+
+
+=================== TEST SUPERATO =================== 
+
+_____________________________________________________
+
+======================TEST GPIO SCHEDA ESPANSIONE=======================
+
+GPIO0 -> BASSO | GPIO1 -> BASSO -> OK
+GPIO0 -> ALTO | GPIO1 -> BASSO -> OK
+GPIO0 -> BASSO | GPIO1 -> ALTO -> OK
+GPIO0 -> ALTO | GPIO1 -> ALTO -> OK
+
+
+=================== TEST SUPERATO =================== 
+
+_____________________________________________________
+
+===================TEST DIGITAL INPUT=====================
+
+TEST TUTTI INGRESSI BASSI
+
+DI_REAG1-> OK
+DI_REAG2-> OK
+DI_REAG3-> OK
+
+TEST REAG1 ALTO
+
+DI_REAG1-> OK
+DI_REAG2-> OK
+DI_REAG3-> OK
+
+TEST REAG2 ALTO
+
+DI_REAG1-> OK
+DI_REAG2-> OK
+DI_REAG3-> OK
+
+TEST REAG3 ALTO
+
+DI_REAG1-> OK
+DI_REAG2-> OK
+DI_REAG3-> OK
+
+TEST TUTTI INGRESSI ALTI
+
+DI_REAG1-> OK
+DI_REAG2-> OK
+DI_REAG3-> OK
+
+
+=================== TEST SUPERATO =================== 
+
+_____________________________________________________
+
+===================TEST DIGITAL OUTPUT=====================
+
+S1_CL |S2_CL |S1_PH |S2_PH |ALARM_NO |S1_AUX |S1_RX |ALARM_NC |
+
+ OK | OK | OK | OK | OK | OK | OK | OK |
+ OK | OK | OK | OK | OK | OK | OK | OK |
+ OK | OK | OK | OK | OK | OK | OK | OK |
+ OK | OK | OK | OK | OK | OK | OK | OK |
+ OK | OK | OK | OK | OK | OK | OK | OK |
+ OK | OK | OK | OK | OK | OK | OK | OK |
+ OK | OK | OK | OK | OK | OK | OK | OK |
+ OK | OK | OK | OK | OK | OK | OK | OK |
+ OK | OK | OK | OK | OK | OK | OK | OK |
+
+
+=================== TEST SUPERATO =================== 
+
+_____________________________________________________
+
+======================TEST MOTORI PERISTALTICHE=======================
+
+
+MOTOR_0 [TARGET: 0 ] -> [ MISURATO: 0 ] -> [DEV: 0], [MAX DEV: 3]  -> [RISULTATO: PASSATO ] 
+MOTOR_1 [TARGET: 0 ] -> [ MISURATO: 0 ] -> [DEV: 0], [MAX DEV: 3]  -> [RISULTATO: PASSATO ] 
+
+MOTOR_0 [TARGET: 24 ] -> [ MISURATO: 24,5 ] -> [DEV: 0,5], [MAX DEV: 3]  -> [RISULTATO: PASSATO ] 
+MOTOR_1 [TARGET: 0 ] -> [ MISURATO: 0 ] -> [DEV: 0], [MAX DEV: 3]  -> [RISULTATO: PASSATO ] 
+
+MOTOR_0 [TARGET: 0 ] -> [ MISURATO: 0 ] -> [DEV: 0], [MAX DEV: 3]  -> [RISULTATO: PASSATO ] 
+MOTOR_1 [TARGET: 24 ] -> [ MISURATO: 24,38 ] -> [DEV: 0,3799992], [MAX DEV: 3]  -> [RISULTATO: PASSATO ] 
+
+MOTOR_0 [TARGET: 24 ] -> [ MISURATO: 24,49 ] -> [DEV: 0,4899998], [MAX DEV: 3]  -> [RISULTATO: PASSATO ] 
+MOTOR_1 [TARGET: 24 ] -> [ MISURATO: 24,38 ] -> [DEV: 0,3799992], [MAX DEV: 3]  -> [RISULTATO: PASSATO ] 
+
+
+=================== TEST SUPERATO =================== 
+
+_____________________________________________________
+
+===================TEST INGRESSI ANALOGICI=====================
+
+TEST TUTTI INGRESSI BASSI
+
+PH [TARGET: 0 ] -> [ MISURATO: 0 ] -> [DEV: 0], [MAX DEV: 100]  -> [RISULTATO: PASSATO ] 
+RX [TARGET: 0 ] -> [ MISURATO: 86 ] -> [DEV: 86], [MAX DEV: 100]  -> [RISULTATO: PASSATO ] 
+TEMP [TARGET: 826 ] -> [ MISURATO: 825 ] -> [DEV: -1], [MAX DEV: 50]  -> [RISULTATO: PASSATO ] 
+I_IN_4-20mA [TARGET: 826 ] -> [ MISURATO: 833 ] -> [DEV: 7], [MAX DEV: 100]  -> [RISULTATO: PASSATO ] 
+
+TEST TUTTI INGRESSI ALTI
+
+PH [TARGET: 3654 ] -> [ MISURATO: 3674 ] -> [DEV: 20], [MAX DEV: 100]  -> [RISULTATO: PASSATO ] 
+RX [TARGET: 1407 ] -> [ MISURATO: 1429 ] -> [DEV: 22], [MAX DEV: 100]  -> [RISULTATO: PASSATO ] 
+TEMP [TARGET: 826 ] -> [ MISURATO: 825 ] -> [DEV: -1], [MAX DEV: 50]  -> [RISULTATO: PASSATO ] 
+I_IN_4-20mA [TARGET: 4045 ] -> [ MISURATO: 4050 ] -> [DEV: 5], [MAX DEV: 100]  -> [RISULTATO: PASSATO ] 
+
+
+=================== TEST SUPERATO =================== 
+
+_____________________________________________________
+
+===================CALIBRAZIONE CORRENTI D'USCITA=====================
+
+CALIBRAZIONE a 0mA
+
+I_CL2->0,316 mA [336] -> PID OUTPUT: -29 | I_PH->0,326 mA [335] -> PID OUTPUT: -30 | I_AUX->0,304 mA [337] -> PID OUTPUT: -28 | 
+I_CL2->0,143 mA [324] -> PID OUTPUT: -12 | I_PH->0,127 mA [324] -> PID OUTPUT: -11 | I_AUX->0,123 mA [327] -> PID OUTPUT: -10 | 
+I_CL2->0,062 mA [320] -> PID OUTPUT: -4 | I_PH->0,058 mA [320] -> PID OUTPUT: -4 | I_AUX->0,06 mA [323] -> PID OUTPUT: -4 | 
+I_CL2->0,042 mA [318] -> PID OUTPUT: -2 | I_PH->0,04 mA [318] -> PID OUTPUT: -2 | I_AUX->0,036 mA [321] -> PID OUTPUT: -2 | 
+I_CL2->0,022 mA [318] -> PID OUTPUT: 0 | I_PH->0,02 mA [318] -> PID OUTPUT: 0 | I_AUX->0,02 mA [321] -> PID OUTPUT: 0 | 
+
+Corrente I_CL2 in target -> 0,022 mA -> [318]
+Corrente I_PH in target -> 0,02 mA -> 318 LSB
+Corrente I_AUX in target -> 0,02 mA -> 321 LSB
+
+VERIFICO TOLLERANZE DIGIT PUNTO BASSO-> OK
+SCRIVO VALORI PUNTO ALTO SU REGISTRI DI CALIBRAZIONE
+
+CALIBRAZIONE a 20mA
+
+I_CL2->20,116 mA [3545] -> PID OUTPUT: -5 | I_PH->20,269 mA [3537] -> PID OUTPUT: -13 | I_AUX->20,196 mA [3541] -> PID OUTPUT: -9 | 
+I_CL2->20,096 mA [3540] -> PID OUTPUT: -5 | I_PH->20,186 mA [3528] -> PID OUTPUT: -9 | I_AUX->20,134 mA [3534] -> PID OUTPUT: -7 | 
+I_CL2->20,086 mA [3536] -> PID OUTPUT: -4 | I_PH->20,192 mA [3518] -> PID OUTPUT: -10 | I_AUX->20,092 mA [3529] -> PID OUTPUT: -5 | 
+I_CL2->20,06 mA [3533] -> PID OUTPUT: -3 | I_PH->20,052 mA [3515] -> PID OUTPUT: -3 | I_AUX->20,05 mA [3527] -> PID OUTPUT: -2 | 
+I_CL2->20,015 mA [3532] -> PID OUTPUT: -1 | I_PH->20,044 mA [3513] -> PID OUTPUT: -2 | I_AUX->20,054 mA [3524] -> PID OUTPUT: -3 | 
+I_CL2->20,011 mA [3532] -> PID OUTPUT: 0 | I_PH->20,032 mA [3511] -> PID OUTPUT: -2 | I_AUX->20,015 mA [3523] -> PID OUTPUT: -1 | 
+I_CL2->20,011 mA [3532] -> PID OUTPUT: 0 | I_PH->20,015 mA [3510] -> PID OUTPUT: -1 | I_AUX->20,011 mA [3522] -> PID OUTPUT: -1 | 
+I_CL2->20,009 mA [3532] -> PID OUTPUT: 0 | I_PH->20,009 mA [3509] -> PID OUTPUT: -1 | I_AUX->20,009 mA [3521] -> PID OUTPUT: -1 | 
+
+Corrente I_CL2 in target -> 20,009 mA -> 3532 LSB
+Corrente I_PH in target -> 20,009 mA -> 3509 LSB
+Corrente I_AUX in target -> 20,009 mA -> 3521 LSB
+
+VERIFICO TOLLERANZE DIGIT PUNTO ALTO-> OK
+SCRIVO VALORI PUNTO ALTO SU REGISTRI DI CALIBRAZIONE
+
+
+
+=================== TEST SUPERATO =================== 
+
+_____________________________________________________
+
+======================TEST FLASH - EEPROM=======================
+
+ESEGUO TEST FLASH -> OK
+ESEGUO TEST EEPROM -> OK
+
+
+=================== TEST SUPERATO =================== 
+
+_____________________________________________________
+
+======================TEST SERIALE RS485 CELLA=======================
+
+
+STRINGA RICEVUTA: HELLO
+
+RICEVUTA STRINGA CORRETTA
+
+
+=================== TEST SUPERATO =================== 
+
+_____________________________________________________
+
+============= RESOCONTO DEI TEST ==============
+
+TEST TASTIERA -> OK
+
+TEST TENSIONI A BORDO SCHEDA -> OK
+
+TEST GPIO -> OK
+
+TEST INGRESSI DIGITALI -> OK
+
+TEST USCITE DIGITALI -> OK
+
+TEST MOTORI -> OK
+
+TEST INGRESSI ANALOGICI -> OK
+
+TEST E CALIBRAZIONI CORRENTI D'USCITA -> OK
+
+TEST FLASH E EEPROM -> OK
+
+TEST RS485 -> OK
+
